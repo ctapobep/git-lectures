@@ -1,0 +1,9 @@
+- Remote is the same repo as your local, no difference
+- You can clone your local repo into another folder: `git clone my-local-repo copy-of-repo`
+- You can add already existing repos and synch with them: `git remote add another-remote http://anothre.remote.git`
+- `git branch -r` should branches of the *remote* repo
+- `git remote -v` shows all the remote repository you've added
+- `git fetch origin` - downloads all the files from remote repo and updates remote branches (`git branch -r`) so that you know the state of the remote repo
+- In order go get changes into your LOCAL branch you'd need to merge the changes from the remote-tracking branch: `git merge origin/dev`
+- `git pull` does 2 things: fetches the state of the remote repo and merges the remote-tracking branch into your local one
+- `git push` updates the remote repo state and then updates the remote-tracking branches locally to point to correct commits.
